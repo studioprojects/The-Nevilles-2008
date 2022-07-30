@@ -1,0 +1,43 @@
+body, html, div {
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+ 	height:100%;
+	min-height:100%;
+	color: #FFFFFF;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
+	background-color: #000000;
+}
+
+.formTxt {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+
+.formHeading {
+	color: #CC0000;
+	font-weight: bold;
+}
+
+a:link {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-style: normal;
+	font-weight: normal;
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+
+a:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-style: normal;
+	font-weight: normal;
+	color: #CC0000;
+	text-decoration: none;
+}

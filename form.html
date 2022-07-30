@@ -1,0 +1,105 @@
+<html>
+<head>
+<title>Nevilles Contact Form</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<script language="JavaScript">
+<!--
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_validateForm() { //v4.0
+  var i,p,q,nm,test,num,min,max,errors='',args=MM_validateForm.arguments;
+  for (i=0; i<(args.length-2); i+=3) { test=args[i+2]; val=MM_findObj(args[i]);
+    if (val) { nm=val.name; if ((val=val.value)!="") {
+      if (test.indexOf('isEmail')!=-1) { p=val.indexOf('@');
+        if (p<1 || p==(val.length-1)) errors+='- '+nm+' must contain an e-mail address.\n';
+      } else if (test!='R') { num = parseFloat(val);
+        if (isNaN(val)) errors+='- '+nm+' must contain a number.\n';
+        if (test.indexOf('inRange') != -1) { p=test.indexOf(':');
+          min=test.substring(8,p); max=test.substring(p+1);
+          if (num<min || max<num) errors+='- '+nm+' must contain a number between '+min+' and '+max+'.\n';
+    } } } else if (test.charAt(0) == 'R') errors += '- '+nm+' is required.\n'; }
+  } if (errors) alert('The following error(s) occurred:\n'+errors);
+  document.MM_returnValue = (errors == '');
+}
+//-->
+</script>
+
+
+<style type="text/css">
+<!--
+body,td,th {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #FFFFFF;
+}
+body {
+	background-color: #000000;
+}
+-->
+</style></head>
+
+<body>
+<div align="center">
+<p class="formTxt"><font face="Verdana, Arial, Helvetica, sans-serif"><font face="Arial, Helvetica, sans-serif"><span class="formHeading"><br>
+Please fill in the following 
+form. All information is strictly confidential</span></font></font><font color="#000000" face="Verdana, Arial, Helvetica, sans-serif"><font color="#FFFFFF" face="Arial, Helvetica, sans-serif"> <i><br>
+( * Denotes required field ).</i></font></font></p>
+</div>
+<form method="post" action="http://mailgate.server-mail.com/cgi-bin/mailgate" name="Contact" onSubmit="MM_validateForm('name','','R','email','','RisEmail','phone','','R');return document.MM_returnValue">
+<table align="center" cellpadding="2" cellspacing="3" width="400">
+<tr> 
+<td> 
+<div align="right" class="maintext formTxt"><span class="formTxt"><font color="#FFFFFF">Name</font></span><font color="#FFFFFF">:</font></div></td>
+<td width="45%"> <font color="#FFFFFF"> 
+<input type="text" name="name" size="20">
+</font><font face="Verdana, Arial, Helvetica, sans-serif" color="#FFFFFF">*</font></td>
+</tr>
+<tr> 
+<td> 
+<div align="right" class="maintext">
+<div align="right" class="formTxt"><font color="#FFFFFF">Email:</font></div>
+</div></td>
+<td width="45%"> <font color="#FFFFFF"> 
+<input type="text" name="email" size="20">
+</font><font face="Verdana, Arial, Helvetica, sans-serif" color="#FFFFFF">*</font></td>
+</tr>
+<tr> 
+<td> 
+<div align="right" class="formTxt"><font color="#FFFFFF">Contact Number:</font></div></td>
+<td width="45%"> <font face="Verdana, Arial, Helvetica, sans-serif" color="#FFFFFF"> 
+<input type="text" name="phone" size="20">
+*</font></td>
+</tr>
+
+<tr>
+<td colspan="2"><div align="right" class="maintext">
+<div align="right" class="maintext">
+<label>
+<div align="center">
+<textarea name="comments" cols="40" rows="10" id="comments">Please make any comments here</textarea>
+</div>
+</label>
+</div>
+</div></td>
+</tr>
+</table>
+<div align="center"><font color="#FFFFFF" face="Arial, Helvetica, sans-serif" size="2"><br>
+<input type="hidden" name="recipient" value="markmarriott@bigpond.com; thenevilles@affiliatedagenciesentertainment.com">
+<input type="hidden" name="subject" value="Nevilles Contact Form">
+<input type="hidden" name="redirect" value="http://www.thenevilles.com.au/thanx.htm">
+<input type="submit" name="Submit2" value="Submit">
+<input type="reset" name="Submit2" value="Reset">
+</font></div>
+</form>
+<font face="Verdana, Arial, Helvetica, sans-serif" color="#000000"> </font> 
+<p align="center">&nbsp;</p>
+</body>
+</html>
